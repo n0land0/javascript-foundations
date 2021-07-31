@@ -1,5 +1,5 @@
 var assert = require("chai").assert;
-var Skier = require("../src/Skier");
+var Skier = require("../src/Skierr");
 
 describe("Skier", function () {
   it('should instantiate a skier object', function () {

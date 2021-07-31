@@ -1,7 +1,7 @@
 var assert = require('chai').assert;
-var Medusa = require('../exercises/medusa');
-var Person = require('../exercises/person');
-var Statue = require('../exercises/statue');
+var Medusa = require('../exercises/medusaa');
+var Person = require('../exercises/personn');
+var Statue = require('../exercises/statuee');
 
 describe('Medusa', function() {
 
@@ -17,14 +17,14 @@ describe('Medusa', function() {
 
   it('should have a name', function() {
     // instantiate a Medusa object with your name as an argument
-    var nolan = new Medusa("Nolan");
+    var medusa1 = new Medusa("Hobie");
     // instantiate another Medusa object with someone else's name as an argument
-    var bowser = new Medusa("Bowser");
+    var medusa2 = new Medusa("Malcolm");
 
     // assert that the first medusa's name is your name
-    assert.equal(nolan.name, "Nolan");
+    assert.equal("Hobie", medusa1.name);
     // assert that the second medusa's name is the other name
-    assert.equal(bowser.name, "Bowser");
+    assert.equal("Malcolm", medusa2.name);
     //NOTE: We will not ask you to write your own tests in a mod 1 assessment, but it is good practice to prepare for mod 2!
   });
 
