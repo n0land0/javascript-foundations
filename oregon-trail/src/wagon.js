@@ -12,11 +12,8 @@ class Wagon {
     this.keys = Object.keys(this);
   }
   addPart(partObj) {
-    // for (var i = 0; i < Object.keys(this).length; i++) {
     for (var i = 0; i < this.keys.length; i++) {
-      // if (Object.keys(this)[i].includes(partObj.type)) {
       if (this.keys[i].includes(partObj.type)) {
-          // this[Object.keys(this)[i]].push(partObj);
           this[this.keys[i]].push(partObj);
       }
     }
@@ -30,7 +27,7 @@ class Wagon {
     (this.oxen.length / this.yokes.length) > 2) {
       return false;
     }
-    for (var i = 0; i < this.keys.length - 3; i++) {
+    for (var i = 1; i < this.keys.length - 3; i++) {
       var currentProperty = this[this.keys[i]];
       for (var j = 0; j < currentProperty.length; j++) {
         if (currentProperty[j].broken) {
